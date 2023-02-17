@@ -1,3 +1,3 @@
 # This file lists all individuals having contributed content to the repository.
-John doe <johndoe@yahoo.com>
+simon ndung'u <versatilerecords254@gmail.com>
 
