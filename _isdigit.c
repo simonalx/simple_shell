@@ -2,10 +2,10 @@
 
 /**
   * _isdigit - checks if the character is digit
-  * @c: character to check
+  * @w: character to check
   * Return: int
   */
-bool _isdigit(int c)
+bool _isdigit(int w)
 {
-	return (c >= '0' && c <= '9');
+	return (w >= '0' && w <= '9');
 }

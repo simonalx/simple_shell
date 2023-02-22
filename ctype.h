@@ -4,13 +4,12 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-bool _isalnum(int c);
-bool _isalpha(int c);
-bool _isdigit(int c);
-bool _isident(int c);
-bool _isspace(int c);
-bool _isquote(int c);
-
-bool _isnumber(const char *s);
+bool _isalnum(int w);
+bool _isalpha(int w);
+bool _isdigit(int w);
+bool _isident(int w);
+bool _isspace(int w);
+bool _isquote(int w);
+bool _isnumber(const char *d);
 
 #endif /* _CTYPE_H_ */

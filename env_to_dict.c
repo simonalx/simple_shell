@@ -27,7 +27,7 @@ env_t *_env_to_dict(env_t **tailptr, char **env)
 {
 	env_t *tail;
 	char *env_str;
-	ssize_t key_len;
+	ssize_t key_length;
 
 	if (!*env)
 		return (*tailptr);
@@ -36,13 +36,13 @@ env_t *_env_to_dict(env_t **tailptr, char **env)
 	if (!env_str)
 		return (NULL);
 
-	key_len = _strchr(*env, '=');
+	key_length = _strchr(*env, '=');
 
-	if (key_len == -1)
+	if (key_length == -1)
 		return (NULL);
 
-	env_str[key_len] = '\0';
-	tail = add_dict_node_end(tailptr, env_str, env_str + key_len + 1);
+	env_str[key_length] = '\0';
+	tail = add_dict_node_end(tailptr, env_str, env_str + key_length + 1);
 	free(env_str);
 
 	return (_env_to_dict(&tail, env + 1));

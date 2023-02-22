@@ -37,18 +37,18 @@ static void *_realloc(void *old, size_t old_size, size_t new_size)
  * @buf: pointer to the static buffer
  * @line: address of a pointer to the line
  * @size: address of a pointer to the line size
- * @n: number of characters to copy from the buffer
+ * @a: number of characters to copy from the buffer
  * Return: If memory allocation fails, return NULL.
  * Otherwise, return a pointer to the line of input.
  */
-static char *_getline_next(buf_t *buf, char **line, size_t *size, size_t n)
+static char *_getline_next(buf_t *buf, char **line, size_t *size, size_t a)
 {
 	char *temp = NULL;
 
 	if (*line)
-		temp = _realloc(*line, *size, *size + n);
+		temp = _realloc(*line, *size, *size + a);
 	else
-		temp = malloc(n + 1);
+		temp = malloc(a + 1);
 
 	if (temp)
 	{
@@ -57,8 +57,8 @@ static char *_getline_next(buf_t *buf, char **line, size_t *size, size_t n)
 		if (*size)
 			*size -= 1;
 
-		_memcpy(*line + *size, buf->next, n);
-		*size += n;
+		_memcpy(*line + *size, buf->next, a);
+		*size += a;
 
 		(*line)[*size] = '\0';
 		*size += 1;

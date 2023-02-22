@@ -199,6 +199,3 @@ handle commands with arguments
 11. File as an input 
 - Your shell should take a file as a command line argument
 
-## Authors
-* [Patrick Deyoreo](https://github.com/patrickdeyoreo)
-* [Banu Sapakova](https://github.com/banuaksom)
