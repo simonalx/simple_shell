@@ -28,4 +28,5 @@ int __exit(info_t *info)
 		close(info->fileno);
 
 	exit(free_info(info));
+
 }

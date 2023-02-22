@@ -2,13 +2,13 @@
 
 /**
  * strjoin - joins two strings with another string
- * @n: address at which to store the size of the new string
+ * @w: address at which to store the size of the new string
  * @sep: joining string
  * @pre: prefix string
  * @suf: suffix string
  * Return: pointer to the new string
  */
-char *strjoin(size_t *n, const char *sep, const char *pre, const char *suf)
+char *strjoin(size_t *w, const char *sep, const char *pre, const char *suf)
 {
 	char *dest = NULL;
 	size_t sep_len = _strlen(sep ? sep : "");
@@ -21,8 +21,8 @@ char *strjoin(size_t *n, const char *sep, const char *pre, const char *suf)
 		_strcpy(dest, pre ? pre : "");
 		_strcpy(dest + pre_len, sep ? sep : "");
 		_strcpy(dest + pre_len + sep_len, suf ? suf : "");
-		if (n)
-			*n = pre_len + sep_len + suf_len + 1;
+		if (w)
+			*w = pre_len + sep_len + suf_len + 1;
 	}
 	return (dest);
 }

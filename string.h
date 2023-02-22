@@ -10,7 +10,7 @@ void *_memdup(const void *src, size_t n);
 void *_memset(void *dest, unsigned char chr, size_t n);
 
 ssize_t _strchr(const char *str, char chr);
-ssize_t _strnchr(const char *str, char chr, size_t n);
+ssize_t _strnchr(const char *str, char chr, size_t w);
 
 int _strcmp(const char *s1, const char *s2);
 int _strncmp(const char *s1, const char *s2, size_t n);
@@ -24,7 +24,7 @@ char *_strndup(const char *str, size_t n);
 ssize_t _strlen(const char *str);
 ssize_t _strnlen(const char *str, size_t n);
 
-char *strjoin(size_t *n, const char *sep, const char *pre, const char *suf);
+char *strjoin(size_t *w, const char *sep, const char *pre, const char *suf);
 char *strjoina(size_t *n, const char *sep, const char **array);
 char *strjoinl(size_t *n, const char *sep, ...);
 

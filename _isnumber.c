@@ -2,16 +2,16 @@
 
 /**
   * _isnumber - check if a string consists only of digits
-  * @s: pointer to string
+  * @d: pointer to string
   * Return: true or false
   */
-bool _isnumber(const char *s)
+bool _isnumber(const char *d)
 {
-	if (s)
+	if (d)
 	{
-		while (*s)
+		while (*d)
 		{
-			if (!_isdigit(*s++))
+			if (!_isdigit(*d++))
 				return (false);
 		}
 		return (true);

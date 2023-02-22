@@ -2,10 +2,10 @@
 
 /**
   * _isident - checks if the character is a valid identifier character
-  * @c: character to check
+  * @w: character to check
  * Return: If c is an identifier character, return 1. Otherwise, return 0.
   */
-bool _isident(int c)
+bool _isident(int w)
 {
-	return (c == '_' || _isalnum(c));
+	return (w == '_' || _isalnum(w));
 }

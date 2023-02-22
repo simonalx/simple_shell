@@ -90,7 +90,7 @@ int __alias(info_t *info);
 int __cd(info_t *info);
 int __env(info_t *info);
 int __exec(info_t *info);
-int __exit(info_t *info);
+int __exit(info_t *inf);
 int __help(info_t *info);
 int __history(info_t *info);
 int __setenv(info_t *info);

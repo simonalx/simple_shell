@@ -2,10 +2,10 @@
 
 /**
   * _isalnum - checks if the character is alphanumeric
-  * @c: character to check
+  * @w: character to check
  * Return: If c is alphanumeric, return 1. Otherwise, return 0.
   */
-bool _isalnum(int c)
+bool _isalnum(int w)
 {
-	return (_isalpha(c) || _isdigit(c));
+	return (_isalpha(w) || _isdigit(w));
 }

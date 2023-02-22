@@ -10,15 +10,15 @@
 cmdlist_t *cmd_to_list(const char *cmd)
 {
 	cmdlist_t *head = NULL;
-	size_t count;
+	size_t counter;
 	char *split = _strdup(cmd);
 
 	if (!split)
 		return (NULL);
 
-	count = split_cmd(split);
+	counter = split_cmd(split);
 
-	if (!_cmd_to_list(&head, split, count))
+	if (!_cmd_to_list(&head, split, counter))
 	{
 		free_cmdlist(&head);
 		return (NULL);
